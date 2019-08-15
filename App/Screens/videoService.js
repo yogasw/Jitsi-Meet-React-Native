@@ -23,7 +23,7 @@ export default class videoService extends Component {
         JitsiMeet.initialize();
         JitsiMeetEvents.addListener('CONFERENCE_LEFT', (data) => {
             this.props.navigation.navigate("Home")
-            Alert.alert("Alert", "Panggilan Selesai")
+            // Alert.alert("Alert", "Panggilan Selesai")
         });
         setTimeout(() => {
             JitsiMeet.call(id_room);
